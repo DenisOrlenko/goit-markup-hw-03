@@ -197,16 +197,16 @@ a .accent.black {
   background-color: var(--footer-bg-color);
 }
 
-.solutions .container {
+.hero {
   display: flex;
   min-height: 600px;
   flex-direction: column;
-  justify-content: center;
+  text-align: center;
 }
 
-/* Центрирование - HERO, BUTTON */
-.hero {
-  text-align: center;
+.hero .container {
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 /* h1 Задается цвет заголовку Героя */
