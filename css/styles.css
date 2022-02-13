@@ -98,11 +98,9 @@ h3 {
 
 /* .logo-web - в навигации */
 .main-nav .logo {
-  display: block;
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
-
   text-decoration: none;
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
@@ -127,7 +125,6 @@ a .accent.black {
 
 /* site-nav цвет списка ссылок */
 .site-nav .link {
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -163,8 +160,7 @@ a .accent.black {
 .contact .link {
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
-
+  align-items: baseline;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -183,12 +179,12 @@ a .accent.black {
   display: flex;
   padding-top: 24px;
   padding-bottom: 25px;
-  align-items: center;
+  align-items: baseline;
 }
 
 .main-nav {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 /* ---------------------HERO----------------------- */
@@ -323,6 +319,7 @@ a .accent.black {
 
   box-shadow: var(--shadow);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-bg-color);
 }
 
 .team-list-content {
@@ -346,19 +343,18 @@ a .accent.black {
 
 /* -----------------------ФУТЕР---------------- */
 /* фон - футер */
-.adress-list {
+.page-footer {
   background-color: var(--footer-bg-color);
 }
 
-.adress-list.down .container {
+.page-footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.adress-list .logo {
-  display: block;
+.page-footer .logo {
+  /* display: block; */
   margin-bottom: 20px;
-
   text-decoration: none;
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
@@ -373,7 +369,7 @@ a .accent.black {
   color: var(--secondary-text-color);
 }
 
-.city .link {
+.footer-contacts .city-link {
   margin-bottom: 9px;
   display: block;
 
@@ -385,17 +381,9 @@ a .accent.black {
   line-height: 1.71;
 }
 
-address .mail {
-  margin-bottom: 9px;
-  display: block;
-}
-
-address .phone {
-  display: block;
-}
-
 /* phone - оформление */
-.mail-phone .link {
+.footer-contacts .mail-link,
+.footer-contacts .phone-link {
   color: var(--footer-text-color);
   text-decoration: none;
   font-style: normal;
@@ -404,14 +392,8 @@ address .phone {
   line-height: 1.71;
 }
 
-/* mail - оформление */
-.down .mail-phone {
-  color: var(--footer-text-color);
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+.mail-item {
+  margin-bottom: 9px;
 }
 
 /* ------------------------------------------- */
