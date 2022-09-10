@@ -147,11 +147,9 @@ h3 {
 
 .site-nav {
   display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
   margin-left: 93px;
-}
-
-.site-nav .item + .item {
-  margin-left: 50px;
 }
 
 /* site-nav цвет списка ссылок */
@@ -180,12 +178,9 @@ h3 {
 
 .contact {
   display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
   margin-left: auto;
-}
-
-
-.contact-item + .contact-item {
-  margin-left: 50px;
 }
 
 /* задается цвет списку контактов в шапке */
@@ -276,14 +271,12 @@ h3 {
 
 .feature-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .feature-item {
-  flex-basis: calc(100% - 4 * var(--list-gap) / 4);
-}
-
-.feature-item + .feature-item {
-  margin-left: var(--list-gap);
+  width: 270px;
 }
 
 /* h3 оформление-1 */
@@ -296,6 +289,7 @@ h3 {
 
 /* p - оформление-1 */
 .feature-item .text {
+
   font-size: 14px;
   line-height: 1.71;
 
@@ -309,15 +303,8 @@ h3 {
 
 .versions-list {
   display: flex;
-  /* margin-left: calc(-1 * var(--list-gap)); */
-}
-
-.versions-item {
-  flex-basis: calc(100% - 3 * var(--list-gap))/3;
-}
-
-.versions-item + .versions-item {
-  margin-left: var(--list-gap);
+  flex-wrap: wrap;
+  gap: var(--list-gap);
 }
 
 /* --------------------SECTION-4------------------- */
@@ -328,14 +315,12 @@ h3 {
 
 .masters-list {
   display: flex;
-  margin-left: calc(-1 * var(--list-gap));
+  flex-wrap: wrap;
+  gap: var(--list-gap);
 }
 
 /* фон к элементу списка */
 .masters-item {
-  flex-basis: calc(100% - 4 * var(--list-gap) / 4);
-  margin-left: var(--list-gap);
-
   background-color: var(--secondary-text-color);
 
   box-shadow: var(--shadow);
