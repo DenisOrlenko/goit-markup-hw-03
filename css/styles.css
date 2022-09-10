@@ -105,9 +105,6 @@ h3 {
 
 /* -----------------HEADER-------------------------- */
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-
   border-bottom: 1px solid var(--border-under-header);
 }
 
@@ -119,6 +116,11 @@ h3 {
 .main-nav {
   display: flex;
   align-items: center;
+}
+
+.page-header .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 /* .logo-web - синий логотип */
@@ -154,8 +156,8 @@ h3 {
 
 /* site-nav цвет списка ссылок */
 .site-nav .link {
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 14px;
@@ -188,8 +190,8 @@ h3 {
 
 /* задается цвет списку контактов в шапке */
 .contact .link {
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   align-items: center;
   font-weight: 500;
   font-size: 14px;
@@ -259,6 +261,9 @@ h3 {
 
 /* --------------------SECTION-2------------------- */
 /* применение ЗАГОЛОВКА к однотипным секциям, в которых одинаковый цвет заголовка */
+.feature {
+  padding-bottom: 47px;
+}
 .section-title {
   margin-bottom: 50px;
 
@@ -299,7 +304,7 @@ h3 {
 
 /* --------------------SECTION-3------------------- */
 .versions {
-  padding-top: 0;
+  padding-top: 47px;
 }
 
 .versions-list {
@@ -420,25 +425,36 @@ h3 {
 /* ------------------------------------------- */
 /* ----------------ПОРТФОЛИО-------------- */
 /* ------------------------------------------- */
+
 .directions-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.directions-list .directions-item+.directions-item {
+.directions-list .directions-item + .directions-item {
   margin-left: 8px;
+}
+
+.directions-item:first-child > .directions-button {
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 /* button применение формления к кнопке */
 .directions-button {
-  color: var(--title-text-color);
-  background-color: var(--secondary-bg-color);
+  padding: 6px 22px;
+
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: inherit;
+
+  color: var(--title-text-color);
+  background-color: var(--secondary-bg-color);
+
   border-radius: 4px;
   cursor: pointer;
   border-style: none;
@@ -458,15 +474,10 @@ h3 {
 .example-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * var(--list-gap));
-  margin-bottom: calc(-1 * var(--list-gap));
+  gap: var(--list-gap);
 }
 
 .example-item {
-  flex-basis: calc(100% / 3 - var(--list-gap));
-  margin-left: var(--list-gap);
-  margin-bottom: var(--list-gap);
-
   text-align: center;
 }
 
