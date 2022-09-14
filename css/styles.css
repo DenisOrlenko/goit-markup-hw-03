@@ -232,16 +232,13 @@ h3 {
 /* button применение формления к кнопке */
 .hero-button {
   padding: 10px 32px;
-
-  font-family: inherit;
+  /* font-family: inherit; */
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
-
   cursor: pointer;
   border-style: none;
   box-shadow: var(--button-border);
@@ -377,8 +374,7 @@ h3 {
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
-  /* letter-spacing: inherit; */
-
+  letter-spacing: inherit;
   color: var(--secondary-text-color);
 }
 
